@@ -1,0 +1,134 @@
+/*Resetando as estilizações do documento*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.Menu-Mobile{
+    display: none;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+
+.logo{
+    color:#16507b;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu a{
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+    /*O atributo transition permitem que você altere os valores das propriedades suavemente, durante um determinado período */
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color: #007bff;
+}
+
+.menu .btn-menu{
+    background-color: #007bff;;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    /*O atributo border-radius faz com que fique uma borda circular no botão*/
+    border-radius: 8px;
+}
+
+.menu .btn-menu:hover{
+    background-color: #124265;
+    color: white;
+}
+
+/*Section Main*/
+
+section .main{
+    background-image: url('img/hero-bg.jpg');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main_cta h2{
+    padding-top: 100px;
+    color: #16507b;
+    font-size: 40px;
+}
+
+/* Footer */
+
+footer{
+    color: white;
+    background-color: blue;
+    text-align: center;
+    border-top: 2px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+/*Responsive Part*/
+
+@media screen and (max-width:768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+    }
+    .Menu-Mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .conquista-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Menu-Mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .conteudo-sobre  p{width: 100%; margin: 20px 20px;}
+}
